@@ -1,0 +1,17 @@
+SAMPLE_BLIP = {
+    "id": "root",
+    "title": "Início",
+    "type": "start",
+    "states": [
+        {
+            "id": "menu_main",
+            "title": "Menu Principal",
+            "type": "menu",
+            "transitions": {"1": "consultar_saldo", "2": "cartoes"},
+        },
+        {"id": "consultar_saldo", "title": "Consultar Saldo", "type": "message", "next": "end"},
+        {"id": "cartoes", "title": "Cartões", "type": "menu", "transitions": {"1": "segunda_via"}},
+        {"id": "segunda_via", "title": "Segunda Via", "type": "message"},
+        {"id": "end", "title": "Finalizar", "type": "end"},
+    ],
+}
