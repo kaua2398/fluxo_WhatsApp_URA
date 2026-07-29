@@ -1,0 +1,14 @@
+# Ambientes Virtuais e Cache de Python
+backend/venv/
+backend/.venv/
+**/__pycache__/
+*.py[cod]
+
+# Node Modules e Builds
+frontend/node_modules/
+frontend/dist/
+frontend/package-lock.json
+
+# Dados e Variáveis de Ambiente
+backend/data/
+*.env
